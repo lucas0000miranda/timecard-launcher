@@ -1,0 +1,27 @@
+{
+  "name": "lucas0000miranda/timecardlauncher",
+  "description": "Application for timecard",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lucas Miranda",
+      "email": "lucas0000miranda@outlook.com",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "src\\": "src/"
+    },
+    "files": [
+      "src/config.php"
+    ]
+  },
+  "require": {
+    "coffeecode/datalayer": "1.1.2"
+  }
+}
