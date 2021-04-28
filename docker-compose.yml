@@ -8,7 +8,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./src:/var/www/html/
+      - ./:/var/www/html/
     ports:
       - 8000:80
   db:
@@ -23,3 +23,9 @@ services:
       MYSQL_USER: user
     ports:
       - 33086:3306
+  composer:
+    restart: 'no'
+    image: composer
+    working_dir: /var/www/html/
+    volumes:
+      - ./:/var/www/html/

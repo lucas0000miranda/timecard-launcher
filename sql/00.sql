@@ -15,6 +15,16 @@ CREATE TABLE `users` (
   KEY `username` (`username`, `type`, `created_timestamp`)
 ) ENGINE = InnoDB AUTO_INCREMENT = 0 DEFAULT CHARSET = utf8mb4;
 
+
+INSERT INTO `users` (username, name, last_name, occupation, type, password)
+VALUES ('lucas00miranda', 'Lucas', 'Miranda', 'developer', 1, '1234');
+
+INSERT INTO `users` (username, name, last_name, occupation, type, password)
+VALUES ('talita00gonalvezs', 'Talita', 'Miranda', 'human resource', 1, '4321');
+
+INSERT INTO `users` (username, name, last_name, occupation, type, password)
+VALUES ('lindi00eliah', 'Lindi', 'Miranda', 'nurse', 2, '7890');
+
 -- -----------------------------------------------------
 -- Table `my_db`.`points`
 -- -----------------------------------------------------

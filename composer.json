@@ -22,6 +22,9 @@
     ]
   },
   "require": {
-    "coffeecode/datalayer": "1.1.2"
+    "coffeecode/datalayer": "1.1.2",
+    "ext-pdo": "*",
+    "ext-mysqli": "*",
+    "ext-json": "*"
   }
 }
